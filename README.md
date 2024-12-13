@@ -42,6 +42,8 @@ This section has two sub-pages:
 
 #### **5. Authentication Pages**
 - Default Laravel Jetstream authentication pages for user login, registration, and password management.
+- If user register the website and then will send the welcome email to registered account email(only gmail)
+- If user join the courses and then will send the joined courses email to all admin email(only gmail)
 
 ### **Key Functionalities**
 1. **Dynamic Content Display**:
