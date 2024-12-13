@@ -1,66 +1,57 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**Educational Website Documentation**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### **Introduction**
+This project "Master Mind" is an educational website focused on course management. Built using **Laravel 11** with **Jetstream** for authentication, the platform is designed to provide a seamless user experience for both learners and administrators.
 
-## About Laravel
+### **Website Overview**
+The site consists of two main roles:
+1. **User**: Learners who browse and join courses.
+2. **Admin**: Administrators who manage content, categories, and courses.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+It provides access to several pages, including, but not limited to:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* **Home**
+* **About**
+* **Courses-(Category and Course pages)**
+* **Contact**
+* **Default Authentication Pages** - Login, Register, etc.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### **Page Details**
 
-## Learning Laravel
+#### **1. Home Page**
+- This page is the landing page which welcomes users and invites them to join the platform.
+- It includes a welcome note and highlights of its salient features.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### **2. About Page**
+- Briefly introduces the website about its mission and goals.
+- Gives a background insight into the platform and who its founders are.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+#### **3. Courses Page**
+This section has two sub-pages:
+- **Category Page**:
+  - It contains a dynamic listing of categories for courses.
+  - Each category can be further explored to look for desired courses.
+- **Course Page**:
+  - Lists all courses dynamically.
+- Users can view the list of courses, but the **Join** button appears only for signed-in users with the "User" role.
+  - If the user is not signed in or does not have the "User" role, the **Join** button will not appear.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### **4. Contact Page**
+- Contact will include all the contact details like email and phone.
+- A form through which the user can directly send messages or inquiries via the website.
 
-## Laravel Sponsors
+#### **5. Authentication Pages**
+- Default Laravel Jetstream authentication pages for user login, registration, and password management.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### **Key Functionalities**
+1. **Dynamic Content Display**:
+   - Course categories and courses are dynamically shown from the database.
+2. **Role-Based Access**:
+   - The **Join** button is restricted to the authenticated users with the "User" role.
+3. **Interactive Contact Form**:
+- Users can contact through a form to directly communicate with the site administrators.
 
-### Premium Partners
+### **Purpose and Intent**
+The main objective of this project is to develop an intuitive and effective course management platform that connects learners with educational resources. By providing role-based access and dynamic content, the site ensures that users have a personalized and secure experience.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This documentation serves as a blueprint in understanding the functionality and intention of the educational platform.
