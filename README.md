@@ -5,7 +5,7 @@ This project "Master Mind" is an educational website focused on course managemen
 
 ### **Website Overview**
 The site consists of two main roles:
-1. **User**: Learners who browse and join courses.
+1. **User**: Learners who  join courses.
 2. **Admin**: Administrators who manage content, categories, and courses.
 
 It provides access to several pages, including, but not limited to:
