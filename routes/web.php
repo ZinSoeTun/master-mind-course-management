@@ -8,7 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-
+//Public Routes
 Route::get('/', [HomeController::class, 'home'])->name('index');
 Route::get('/user/about', [HomeController::class, 'about'])->name('about');
 Route::get('/user/courses/categories', [HomeController::class, 'categories'])->name('categories');
@@ -18,8 +18,8 @@ Route::post('/user/contact/form',[ContactController::class,'contactForm'])->name
 
 
 
-
- //Authentication && Admin Routes
+//Private Routes
+ //Authentication && Course Joined Route
  Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -27,11 +27,7 @@ Route::post('/user/contact/form',[ContactController::class,'contactForm'])->name
 ])->group(function () {
     Route::get('/user/courses/join/{id}',[HomeController::class,'joinCourse'])->name('join.course');
 });
-
-
-
-
-  //Authentication && Admin Routes
+ //Authentication && Admin Routes
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
